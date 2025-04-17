@@ -254,6 +254,13 @@ func (r *renderer) walk() error {
 				// when executing the template
 				return "", nil
 			},
+			"replace": strings.Replace,
+			"lower": strings.ToLower,
+			"upper": strings.ToUpper,
+			"index": strings.Index,
+			"trimleft": strings.TrimLeft,
+			"trimright": strings.TrimRight
+			
 		})
 
 		// Process all entries in current directory
